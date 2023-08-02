@@ -6,3 +6,7 @@ Emacs 29 brings treesit, elgot and something interesting. This repo is an attemp
 - https://github.com/reasonml-editor/reason-mode
 - [[https://forum.rescript-lang.org/t/rescript-emacs-support-with-rescript-vscode/1056][Rescript emacs support with rescript-vscode]]
 
+Tree-sitter related:
+
+- https://github.com/nkrkv/tree-sitter-rescript
+- https://github.com/lambdadog/rescript-tree-sitter-mode
