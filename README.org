@@ -1,0 +1,8 @@
+* rsscript-ts-mode -- rescript mode with tree-sitter
+
+Emacs 29 brings treesit, elgot and something interesting. This repo is an attempt to add treesit support for rescript-mode.
+
+- https://github.com/jjlee/rescript-mode
+- https://github.com/reasonml-editor/reason-mode
+- [[https://forum.rescript-lang.org/t/rescript-emacs-support-with-rescript-vscode/1056][Rescript emacs support with rescript-vscode]]
+
