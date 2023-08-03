@@ -10,3 +10,16 @@ Tree-sitter related:
 
 - https://github.com/nkrkv/tree-sitter-rescript
 - https://github.com/lambdadog/rescript-tree-sitter-mode
+
+Prereuquest treesit knowledge
+
+- [[https://tree-sitter.github.io/tree-sitter/using-parsers][Using Parsers]]
+- [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Parsing-Program-Source.html][Parsing Program Source -- Elisp maunal]]
+- [[https://casouri.github.io/note/2023/tree-sitter-starter-guide/index.html][Tree-sitter starter guide]]
+- [[https://casouri.github.io/note/2021/emacs-tree-sitter/index.html][RFC: Emacs tree-sitter integration]]
+
+Prerequest elisp knowledge
+
+- [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Modes.html][Major and Minor Modes]]
+
+Emacs 29 has 20 buil-in tree-sitter major modes for C, C++, C#, Java, ... from which we can learn some basic usage. Just use =M-x apropos -ts-mode$= to view them.
