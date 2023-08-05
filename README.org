@@ -1,6 +1,6 @@
-* rsscript-ts-mode -- rescript mode with tree-sitter
+* rsscript2-mode -- rescript mode with tree-sitter
 
-Emacs 29 brings treesit, elgot and something interesting. This repo is an attempt to add treesit support for rescript-mode.
+Emacs 29 brings treesit, elgot and something interesting. This repo is an attempt to add treesit support for rescript-mode. Due to the existance of rescript-mode, I name this repo rescript2-mode.
 
 - https://github.com/jjlee/rescript-mode
 - https://github.com/reasonml-editor/reason-mode
@@ -23,3 +23,20 @@ Prerequest elisp knowledge
 - [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Modes.html][Major and Minor Modes]]
 
 Emacs 29 has 20 buil-in tree-sitter major modes for C, C++, C#, Java, ... from which we can learn some basic usage. Just use =M-x apropos -ts-mode$= to view them.
+
+** known problem
+
+To use rescript's treesit parser in Emacs, we need:
+
+- libtree-sitter.dll or libtree-sitter.so (from tree-sitter)
+- treesit.c and treesit.h (emacs build-in)
+- treesit.el (emacs build-in, user api)
+- libtree-sitter-rescript (third-party package)
+
+If any of them broke, then treesit-rescript cannot work properly in Emacs. Maybe the first three is robust enough. The code below causes Emacs fall into infinite loop and connot recover by C-g:
+
+#+BEGIN_SRC elisp
+  (treesit-parse-string "//" 'rescript)
+#+END_SRC
+
+If I want to make a robust rescript treesit mode, maybe I need to improve tree-sitter-rescript.
